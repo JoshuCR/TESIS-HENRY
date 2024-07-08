@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta etiquetas -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Medi</title>
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  
+  <style>
+    /* Estilos adicionales si son necesarios */
+    .game-iframe {
+      width: 100%;
+      height: 600px; /* Ajusta la altura según sea necesario */
+      border: none; /* Quita el borde del iframe */
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- Encabezado -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" />
+            <span>CHEMIE-TOEPASSEN</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> INFOGRAFÍAS </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html"> EJERCICIOS </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="client.html"> S.Y.R </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="juegos.html">JUEGOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">VIDEOS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Fin del encabezado -->
+  </div>
+  <!-- Fin del área principal -->
+
+  <!-- Sección para el juego de química -->
+  <section class="game_section">
+    <div class="container">
+      <h2>Juego de Química</h2>
+      <!-- Imagen como botón para abrir la ventana emergente -->
+      <a href="#" onclick="openGameWindow(); return false;">
+        <img src="images/a1.png" alt="Juego de Química" style="max-width: 100%; height: auto; cursor: pointer;" />
+      </a>
+    </div>
+  </section>
+  <!-- Fin de la sección para el juego de química -->
+
+  <!-- Script JavaScript para abrir ventana emergente -->
+  <script>
+    function openGameWindow() {
+      var width = 800; // Ancho de la ventana
+      var height = 600; // Alto de la ventana
+      var left = (screen.width - width) / 2;
+      var top = (screen.height - height) / 2;
+      var gameUrl = "https://es.educaplay.com/recursos-educativos/19622735-rellena_los_espacios_alcoholes_en_la_quimica_organica.html";
+
+      window.open(gameUrl, "gameWindow", "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top + ",resizable=yes,scrollbars=no");
+    }
+  </script>
+
+  <!-- Pie de página -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2019 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </section>
+  <!-- Fin del pie de página -->
+
+  <!-- Scripts JavaScript -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>

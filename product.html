@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Medi</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <!-- jQuery y FancyBox JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+  <!-- Estilos adicionales -->
+  <style>
+    /* Eliminar márgenes del cuerpo */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Alinear el texto del encabezado a la izquierda */
+    .sub_heading {
+      text-align: left;
+    }
+
+    /* Estilo para los elementos de la galería */
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+
+    .gallery-item img {
+      max-width: 100%; /* Asegura que las imágenes se ajusten al contenedor */
+      height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- Encabezado -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" />
+            <span>
+              CHEMIE-TOEPASSEN
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> INFOGRAFÍAS </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html"> EJERCICIOS </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="client.html"> S.Y.R </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="juegos.html">JUEGOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">VIDEOS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- Título de la sección -->
+  <div class="d-flex justify-content-center" style="margin-top: 30px;">
+    <h2 class="custom_heading font-weight-bold">EJERCICIOS</h2>
+  </div>
+
+  <!-- Contenedor de contenido -->
+  <div class="container">
+    <!-- Título de la subsección -->
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-start">
+          <h3 class="sub_heading font-weight-bold">RESOLVER</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Galería de imágenes -->
+    <div class="gallery" style="margin-top: 30px;">
+      <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/EJR1.png">
+          <img src="images/EJ1.png" alt="Thumbnail 1" style="max-width: 500px"/>
+        </a>
+        <a data-fancybox="gallery" href="images/EJR1.png" data-caption="Respuesta al ejercicio 1">
+          <img src="images/EJR1.png" alt="Respuesta 1" style="display: none;"/>
+        </a>
+        </div>
+      <div class="gallery-item">
+          <a data-fancybox="gallery" href="images/EJR1.png">
+            <img src="images/EJ1.png" alt="Thumbnail 2" style="max-width: 500px;" />
+          </a>
+          <a data-fancybox="gallery" href="images/E2_respuesta.jpeg" data-caption="Respuesta al ejercicio 2">
+            <img src="images/E2.jpeg" alt="Respuesta 2" style="display: none;"/>
+          </a>
+          
+        </div>
+        <!-- Agrega más ejercicios con sus respuestas aquí -->
+      </div>
+    </div>
+  </div>
+
+ 
+
+ 
+
+  <!-- Inicializar FancyBox -->
+  <script>
+    $(document).ready(function () {
+      $('[data-fancybox="gallery"]').fancybox({
+        buttons: [
+          "zoom",
+          "slideShow",
+          "thumbs",
+          "close"
+        ],
+        loop: false,
+        protect: true
+      });
+    });
+  </script>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Química</title>
+    <style>
+        .exercise-container {
+            text-align: center;
+            position: relative;
+        }
+        .exercise-container img {
+            width: 80%;
+            margin: 20px 0;
+        }
+        .input-box {
+            position: absolute;
+            width: 50px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        #answer1 { top: 100px; left: 150px; }
+        #answer2 { top: 150px; left: 250px; }
+        #answer3 { top: 200px; left: 350px; }
+        #answer4 { top: 250px; left: 450px; }
+        #answer5 { top: 300px; left: 550px; }
+        #answer6 { top: 350px; left: 650px; }
+        #answer7 { top: 400px; left: 750px; }
+        #answer8 { top: 450px; left: 850px; }
+    </style>
+</head>
+<body>
+    <div class="exercise-container">
+        <h2>Completa el ejercicio</h2>
+        <img src="images/1.jpeg" alt="Exercise Image">
+        <input type="text" id="answer1" class="input-box">
+        <input type="text" id="answer2" class="input-box">
+        <input type="text" id="answer3" class="input-box">
+        <input type="text" id="answer4" class="input-box">
+        <input type="text" id="answer5" class="input-box">
+        <input type="text" id="answer6" class="input-box">
+        <input type="text" id="answer7" class="input-box">
+        <input type="text" id="answer8" class="input-box">
+        <br>
+        <button onclick="calificar()">Finalizar</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
